@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja de Apps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .app-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .app-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 200px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .app-card:hover {
+            transform: scale(1.05);
+        }
+        .app-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .app-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .app-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .app-card a {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #00598F;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .app-card a:hover {
+            background: #004670;
+        }
+        @media (max-width: 600px) {
+            .app-card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Loja de Apps</h1>
+    <div class="app-list">
+        <div class="app-card">
+            <img src="images/calculadora_icon.png" alt="Ícone de Calculadora Simples">
+            <h3>Calculadora Simples</h3>
+            <p>Uma calculadora básica para operações matemáticas.</p>
+            <a href="downloads/calculadora_simples.apk" download>Baixar APK</a>
+        </div>
+        <div class="app-card">
+            <img src="images/notas_icon.png" alt="Ícone de Bloco de Notas">
+            <h3>Bloco de Notas</h3>
+            <p>Um aplicativo para criar e salvar notas rapidamente.</p>
+            <a href="downloads/bloco_notas.apk" download>Baixar APK</a>
+        </div>
+        <div class="app-card">
+            <img src="images/memoria_icon.png" alt="Ícone de Jogo da Memória">
+            <h3>Jogo da Memória</h3>
+            <p>Um jogo divertido para treinar sua memória.</p>
+            <a href="downloads/jogo_memoria.apk" download>Baixar APK</a>
+        </div>
+    </div>
+</body>
+</html>
